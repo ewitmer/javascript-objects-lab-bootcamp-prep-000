@@ -22,3 +22,7 @@ function destructivelyDeleteFromObjectByKey(object, key) {
   delete object[key]
   return object
 }
+
+obj = 
+destructivelyUpdateObjectWithKeyAndValue(object, key, value)
+
