@@ -23,6 +23,6 @@ function destructivelyDeleteFromObjectByKey(object, key) {
   return object
 }
 
-obj = 
-destructivelyUpdateObjectWithKeyAndValue(object, key, value)
+var obj = { prop: 1 }
+destructivelyUpdateObjectWithKeyAndValue(obj, key, value)
 
