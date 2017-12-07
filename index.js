@@ -6,8 +6,7 @@ function updateObjectWithKeyAndValue(object, key, value) {
 }
 
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value) { 
-  var newObj = Object.assign({}, object)
-  newObj[key] = value
+  let newObj = Object.assign(object, {[key]: value})
   console.log(object)
   console.log(newObj)
   return newObj
@@ -25,5 +24,5 @@ function destructivelyDeleteFromObjectByKey(object, key) {
 }
 
 var obj = { prop: 1 }
-destructivelyUpdateObjectWithKeyAndValue(obj, 'prop2', 2)
+destructivelyUpdateObjectWithKeyAndValue(obj, 'props', 2)
 
